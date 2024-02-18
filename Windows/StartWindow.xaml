@@ -1,0 +1,29 @@
+﻿<Window x:Class="FolderizerDesktop.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:customcontrols="clr-namespace:FolderizerDesktop.CustomControls"
+        mc:Ignorable="d"
+        Title="Folderizer"
+        Height="600"
+        Width="500"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <customcontrols:FolderizerLogo HorizontalAlignment="Center" 
+               Height="80"
+               Width="Auto"
+               Margin="0,100,0,0" 
+               VerticalAlignment="Top"></customcontrols:FolderizerLogo>
+
+        <Label Content="Organize your audio files and declutter your musical life" 
+               Margin="0,230,0,0" 
+               FontFamily="{StaticResource RobotoMedium}" 
+               Foreground="{DynamicResource SecondaryTextBrush}"
+               FontSize="{DynamicResource SplashScreenFontSize}"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Center"
+               />
+        <Button Content="Start" FontSize="{DynamicResource ButtonFontSize}" HorizontalAlignment="Center" Margin="0,383,0,0" VerticalAlignment="Top" Height="37" Width="162" Click="ButtonStart_Click"/>
+    </Grid>
+</Window>
